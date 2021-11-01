@@ -11,6 +11,6 @@ export const changeTitleInput = (input) => {
     return({type: CHANGE_TITLE_INPUT, payload: input});
 }
 
-export const changeTitleInput = () => {
+export const changeTitle = () => {
     return({type: CHANGE_TITLE});
 }
