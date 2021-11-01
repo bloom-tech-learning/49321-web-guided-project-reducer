@@ -4,3 +4,6 @@ export const initialState = {
     newTitleText: ""
 }
 
+const reducer = (state, action) => {
+    return(state);
+}
