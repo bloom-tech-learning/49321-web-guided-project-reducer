@@ -6,6 +6,12 @@ export const initialState = {
 
 //{type: "TOGGLE_EDITING"}
 const reducer = (state, action) => {
+    if (action.type === "TOGGLE_EDITING") {
+        return({
+            ...state,
+            editing: !state.editing
+        });
+    }
     
     return(state);
 }
