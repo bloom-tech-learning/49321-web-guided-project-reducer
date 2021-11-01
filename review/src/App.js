@@ -39,6 +39,11 @@ export default function App() {
     dispatch(addAction(2));
   }
 
+  const handleSubtractClick = ()=> {
+    dispatch(subAction(8));
+  }
+
+
   console.log("current state: ", state);
   
   return (
@@ -48,7 +53,7 @@ export default function App() {
       <button onClick={handleAddClick} type="button" className="btn">
         + 2
       </button>
-      <button type="button" className="btn">
+      <button onClick={handleSubtractClick} type="button" className="btn">
         - 8
       </button>
       <button type="button" className="btn">
