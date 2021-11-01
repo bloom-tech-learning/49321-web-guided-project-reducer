@@ -17,6 +17,7 @@ const Title = () => {
 
   const handleEditing = () => {
     // setEditing(!editing);
+    console.log("1. Button is clicked.");
     dispatch(toggleEditing());
   }
 
