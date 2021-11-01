@@ -1,4 +1,4 @@
-import { TOGGLE_EDITING, CHANGE_TITLE_INPUT } from './../actions';
+import { TOGGLE_EDITING, CHANGE_TITLE_INPUT, CHANGE_TITLE } from './../actions';
 
 export const initialState = {
     title: "Hello Earthling",
@@ -19,6 +19,11 @@ const reducer = (state, action) => {
             return({
                 ...state,
                 newTitleText: action.payload
+            });
+        case(CHANGE_TITLE):
+            return({
+                ...state,
+                
             });
     }
     // if (action.type === TOGGLE_EDITING) {
