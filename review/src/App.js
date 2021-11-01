@@ -35,6 +35,10 @@ import "./styles.css";
 export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const handleAddClick = ()=> {
+    state = reducer(state, addAction(2));
+  }
+
   return (
     <div className="App">
       <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
