@@ -23,7 +23,8 @@ const reducer = (state, action) => {
         case(CHANGE_TITLE):
             return({
                 ...state,
-                
+                title: state.newTitleText,
+                editing: false
             });
     }
     // if (action.type === TOGGLE_EDITING) {
