@@ -1,4 +1,4 @@
-import TOGGLE_EDITING from './../actions';
+import { TOGGLE_EDITING } from './../actions';
 
 export const initialState = {
     title: "Hello Earthling",
