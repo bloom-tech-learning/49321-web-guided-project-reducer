@@ -15,6 +15,7 @@ const Title = () => {
 
   const handleEditing = () => {
     // setEditing(!editing);
+    dispatch({type: "TOGGLE_EDITING"});
   }
 
   const handleFormSubmit = () => {
