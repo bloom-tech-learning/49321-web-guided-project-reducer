@@ -24,9 +24,9 @@ const Title = () => {
 
   return (
     <div>
-      {!editing ? (
+      {!state.editing ? (
         <h1>
-          {title}{' '}
+          {state.title}{' '}
           <i onClick={handleEditing} className="far fa-edit" />
         </h1>
       ) : (
@@ -35,7 +35,7 @@ const Title = () => {
             className="title-input"
             type="text"
             name="newTitleText"
-            value={newTitleText}
+            value={state.newTitleText}
             onChange={handleChanges}
           />
           <button
