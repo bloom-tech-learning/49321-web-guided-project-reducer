@@ -4,6 +4,7 @@ export const initialState = {
     newTitleText: ""
 }
 
+//{type: "TOGGLE_EDITING"}
 const reducer = (state, action) => {
     
     return(state);

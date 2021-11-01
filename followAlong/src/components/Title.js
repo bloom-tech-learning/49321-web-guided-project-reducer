@@ -14,7 +14,7 @@ const Title = () => {
   };
 
   const handleEditing = () => {
-    // setEditing(!editing);
+    setEditing(!editing);
   }
 
   const handleFormSubmit = () => {
