@@ -1,7 +1,7 @@
 export const initialState = {
-    title: "Hello Warren",
-    editing: true,
-    newTitleText: "asdfafs"
+    title: "Hello Earthling",
+    editing: false,
+    newTitleText: ""
 }
 
 const reducer = (state, action) => {
