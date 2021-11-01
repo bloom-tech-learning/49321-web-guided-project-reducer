@@ -7,6 +7,9 @@ const addAction = (value)=>{
   return({type:"ADD", payload: value});
 }
 
+const subAction = (value)=>{
+  return({type:"SUBTRACT", payload: value});
+}
 
 let currentState = initialState;
 console.log("currentState: ", currentState);
