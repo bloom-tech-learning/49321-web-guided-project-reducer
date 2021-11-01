@@ -17,7 +17,7 @@ const Title = () => {
 
   const handleEditing = () => {
     // setEditing(!editing);
-    dispatch();
+    dispatch(toggleEditing());
   }
 
   const handleFormSubmit = () => {
