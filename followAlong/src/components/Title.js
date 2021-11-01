@@ -26,6 +26,7 @@ const Title = () => {
     // setEditing(false);
   }
 
+  console.log('0/5. Render Application.');
   return (
     <div>
       {!state.editing ? (
