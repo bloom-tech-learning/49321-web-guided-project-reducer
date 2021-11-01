@@ -25,7 +25,7 @@ const Title = () => {
   const handleFormSubmit = () => {
     // setTitle(newTitleText);
     // setEditing(false);
-    dispatch(changeTitle);
+    dispatch(changeTitle());
   }
 
   console.log('0/5. Render Application.');
