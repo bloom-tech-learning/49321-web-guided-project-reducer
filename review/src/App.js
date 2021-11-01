@@ -11,7 +11,10 @@ const addAction = (value)=>{
 let currentState = initialState;
 console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, addAction(2132324));
+currentState = reducer(currentState, addAction(3));
+console.log("currentState: ", currentState);
+
+currentState = reducer(currentState, addAction(4));
 console.log("currentState: ", currentState);
 
 // currentState = reducer(currentState, {type:"ADD", payload: 5});
