@@ -35,11 +35,11 @@ import "./styles.css";
 export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  console.log(state);
-  
+  console.log("currentState: ", state);
+
   return (
     <div className="App">
-      <textarea rows="1" value="0" id="total" type="text" name="ans"></textarea>
+      <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
       <br />
       <button type="button" className="btn">
         +
