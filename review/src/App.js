@@ -5,20 +5,21 @@ import {addAction, clearAction, subAction} from './actions/calcActions';
 import "./styles.css";
 
 
-let currentState = initialState;
-console.log("currentState: ", currentState);
+// let currentState = initialState;
+// console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, addAction(3));
-console.log("currentState: ", currentState);
+// currentState = reducer(currentState, addAction(3));
+// console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, addAction(4));
-console.log("currentState: ", currentState);
+// currentState = reducer(currentState, addAction(4));
+// console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, clearAction());
-console.log("currentState: ", currentState);
+// currentState = reducer(currentState, clearAction());
+// console.log("currentState: ", currentState);
 
-currentState = reducer(currentState, subAction(10));
-console.log("currentState: ", currentState);
+// currentState = reducer(currentState, subAction(10));
+// console.log("currentState: ", currentState);
+
 // currentState = reducer(currentState, {type:"ADD", payload: 5});
 // console.log("currentState: ", currentState);
 
@@ -32,6 +33,10 @@ console.log("currentState: ", currentState);
 // console.log("currentState: ", currentState);
 
 export default function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  console.log(state);
+  
   return (
     <div className="App">
       <textarea rows="1" value="0" id="total" type="text" name="ans"></textarea>
