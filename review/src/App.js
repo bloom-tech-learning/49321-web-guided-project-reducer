@@ -3,22 +3,6 @@ import reducer, { initialState} from './reducers/calcReducer';
 import "./styles.css";
 
 
-const addAction = (value)=>{
-  return({type:"ADD", payload: value});
-}
-
-const subAction = (value)=>{
-  return({type:"SUBTRACT", payload: value});
-}
-
-const clearAction = ()=>{
-  return({type:"CLEAR"});
-}
-
-const addToMemoryAction = ()=>{
-  return({type:"ADD_TO_MEMORY"});
-}
-
 let currentState = initialState;
 console.log("currentState: ", currentState);
 
