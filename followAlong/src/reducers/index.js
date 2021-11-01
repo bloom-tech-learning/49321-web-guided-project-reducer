@@ -1,4 +1,4 @@
-import { TOGGLE_EDITING } from './../actions';
+import TOGGLE_EDITING from './../actions';
 
 export const initialState = {
     title: "Hello Earthling",
@@ -8,6 +8,7 @@ export const initialState = {
 
 //{type: "TOGGLE_EDITING"}
 const reducer = (state, action) => {
+    console.log('3. Enters the reducer.');
     if (action.type === TOGGLE_EDITING) {
         return({
             ...state,
