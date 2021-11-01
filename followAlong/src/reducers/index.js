@@ -9,18 +9,30 @@ export const initialState = {
 //{type: "TOGGLE_EDITING"}
 const reducer = (state, action) => {
     console.log('3. Enters the reducer.');
-    if (action.type === TOGGLE_EDITING) {
-        console.log('4. Executes toggle editting.');
-        return({
-            ...state,
-            editing: !state.editing
-        });
-    } else if (action.type === CHANGE_TITLE_INPUT) {
-        return({
-            ...state,
-            newTitleText: action.payload
-        });
+    switch(action.type){
+        case(TOGGLE_EDITING):
+            return({
+                ...state,
+                editing: !state.editing
+            });
+        case(CHANGE_TITLE_INPUT):
+            return({
+                ...state,
+                newTitleText: action.payload
+            });
     }
+    // if (action.type === TOGGLE_EDITING) {
+    //     console.log('4. Executes toggle editting.');
+    //     return({
+    //         ...state,
+    //         editing: !state.editing
+    //     });
+    // } else if (action.type === CHANGE_TITLE_INPUT) {
+    //     return({
+    //         ...state,
+    //         newTitleText: action.payload
+    //     });
+    // }
 
     return(state);
 }
