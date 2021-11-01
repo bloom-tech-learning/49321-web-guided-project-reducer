@@ -1,5 +1,7 @@
+export const ADD = "ADD";
+
 export const addAction = (value)=>{
-    return({type:"ADD_VALUE", payload: value});
+    return({type:ADD, payload: value});
 }
 
 export const subAction = (value)=>{
