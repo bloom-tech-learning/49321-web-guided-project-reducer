@@ -39,6 +39,8 @@ export default function App() {
     state = reducer(state, addAction(2));
   }
 
+  console.log("current state: ", state);
+  
   return (
     <div className="App">
       <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
