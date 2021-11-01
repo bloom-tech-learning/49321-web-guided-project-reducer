@@ -1,5 +1,7 @@
 import React, { useReducer } from "react";
 import reducer, { initialState} from './reducers/calcReducer';
+import {addAction, clearAction, subAction} from './actions/calcActions';
+
 import "./styles.css";
 
 
