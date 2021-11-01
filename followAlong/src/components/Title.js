@@ -5,21 +5,21 @@ const Title = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   console.log("current state: ", state);
 
-  const [title, setTitle] = useState('Hello earthlings!');
-  const [editing, setEditing] = useState(false);
-  const [newTitleText, setNewTitleText] = useState('');
+  // const [title, setTitle] = useState('Hello earthlings!');
+  // const [editing, setEditing] = useState(false);
+  // const [newTitleText, setNewTitleText] = useState('');
 
   const handleChanges = e => {
-    setNewTitleText(e.target.value);
+    // setNewTitleText(e.target.value);
   };
 
   const handleEditing = () => {
-    setEditing(!editing);
+    // setEditing(!editing);
   }
 
   const handleFormSubmit = () => {
-    setTitle(newTitleText);
-    setEditing(false);
+    // setTitle(newTitleText);
+    // setEditing(false);
   }
 
   return (
