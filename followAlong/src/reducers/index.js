@@ -1,3 +1,5 @@
+import TOGGLE_EDITING from './../actions';
+
 export const initialState = {
     title: "Hello Earthling",
     editing: false,
@@ -6,13 +8,13 @@ export const initialState = {
 
 //{type: "TOGGLE_EDITING"}
 const reducer = (state, action) => {
-    if (action.type === "TOGGLE_EDITING") {
+    if (action.type === TOGGLE_EDITING) {
         return({
             ...state,
             editing: !state.editing
         });
     }
-    
+
     return(state);
 }
 
