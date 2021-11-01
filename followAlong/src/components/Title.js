@@ -3,6 +3,7 @@ import React, { useState, useReducer } from 'react';
 
 const Title = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  console.log("current state: ", state);
 
   const [title, setTitle] = useState('Hello earthlings!');
   const [editing, setEditing] = useState(false);
