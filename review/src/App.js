@@ -1,7 +1,30 @@
 import React, { useReducer } from "react";
-import reducer from './reducers/calcReducer';
+import reducer, { initialState} from './reducers/calcReducer';
 import "./styles.css";
 
+
+const addAction = ()=>{
+  return({type:"ADD", payload: 2});
+}
+
+
+let currentState = initialState;
+console.log("currentState: ", currentState);
+
+currentState = reducer(currentState, addAction());
+console.log("currentState: ", currentState);
+
+// currentState = reducer(currentState, {type:"ADD", payload: 5});
+// console.log("currentState: ", currentState);
+
+// currentState = reducer(currentState, {type:"SUBTRACT", payload: 6});
+// console.log("currentState: ", currentState);
+
+// currentState = reducer(currentState, {type:"ADD_TO_MEMORY"});
+// console.log("currentState: ", currentState);
+
+// currentState = reducer(currentState, {type:"CLEAR"});
+// console.log("currentState: ", currentState);
 
 export default function App() {
   return (
