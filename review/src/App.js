@@ -35,11 +35,16 @@ import "./styles.css";
 export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  // let state = initialState;
+  // let state = initialState;   
 
   const handleAddClick = ()=> {
     // console.log('click');
+
+    // add above line (let state = initialState;) and 
+    // commit line of (const [state, dispatch] = useReducer(reducer, initialState);)
+    // the following will works as above block but can not show on UI !!!
     // state = reducer(state, addAction(2))
+    
     // console.log("current state: ", state);
     // return state;
     dispatch(addAction(2));
